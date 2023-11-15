@@ -22,10 +22,10 @@ class Program
         Circle circle = new Circle("purple", true, 3);
         Rectangle rectangle = new Rectangle("gray", true, 30, 40);
         point.Hor(22);
+        circle.Hor(23);
+        rectangle.Vert(42);
+        rectangle.Hor(21);
         point.Vert(2);
-        circle.Vert(23);
-        rectangle.Hor(42);
-        rectangle.Vert(21);
         point.change("red");
         circle.change("black");
         rectangle.change("blue");
