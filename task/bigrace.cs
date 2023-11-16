@@ -15,11 +15,11 @@
         };
     }
 
-    public void PlayGames(string team)
+    public void PlayGames(string t)
     {
         foreach (var g in gs)
         {
-            g.Play(team);
+            g.Play(t);
         }
     }
 }
