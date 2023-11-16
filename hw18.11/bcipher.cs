@@ -6,19 +6,17 @@
 
         for (int i = 0; i < text.Length; i++)
         {
-            char c = text[i];
-
-            if (char.IsLower(c))
+            if (char.IsLower(text[i]))
             {
-                s[i] = (char)('я' - (c - 'а'));
+                s[i] = (char)('я' - (text[i] - 'а'));
             }
             else if (char.IsUpper(c))
             {
-                s[i] = (char)('Я' - (c - 'А'));
+                s[i] = (char)('Я' - (text[i] - 'А'));
             }
             else
             {
-                s[i] = c;
+                s[i] = text[i];
             }
         }
 
