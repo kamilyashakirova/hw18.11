@@ -5,22 +5,22 @@ class Rectangle : Point
     protected int w;
     protected int h;
 
-    public Rectangle(string c, bool visible, int w, int h) : base(c, visible)
+    public Rectangle(string c, bool v, int w, int h) : base(c, v)
     {
         this.w = w;
         this.h = h;
     }
 
-    public int CalculateArea()
+    public int area()
     {
         return w * h;
     }
-    public void Hor(int d)
+    public void hor(int d)
     {
         Console.WriteLine("двигаем прямоугольник по горизонтали на расстояние: {0}", d);
     }
 
-    public void Vert(int d)
+    public void vert(int d)
     {
         Console.WriteLine("двигаем прямоугольник по вертикали на расстояние: {0}", d);
     }
@@ -32,6 +32,6 @@ class Rectangle : Point
 
     public override void status()
     {
-        Console.WriteLine("прямоугольник - цвет: {0}, Visible: {1}", c, visible);
+        Console.WriteLine("прямоугольник - цвет: {0}, Visible: {1}", c, v);
     }
 }
