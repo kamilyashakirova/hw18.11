@@ -2,15 +2,15 @@
 class Circle : Point
 {
     protected double r;
-    public Circle(string c, bool visible, double r) : base(c, visible)
+    public Circle(string c, bool v, double r) : base(c, v)
     {
         this.r = r;
     }
-    public double CalculateArea()
+    public double area()
     {
         return Math.PI * Math.Pow(r, 2);
     }
-    public void Hor(int d)
+    public void hor(int d)
     {
         Console.WriteLine("двигаем круг по горизонтали на расстояние: {0}", d);
     }
@@ -19,12 +19,12 @@ class Circle : Point
         c = newColor;
         Console.WriteLine("меняем цвет на: {0}", c);
     }
-    public void Vert(int d)
+    public void vert(int d)
     {
         Console.WriteLine("двигаем круг по вертикали на расстояние: {0}", d);
     }
     public override void status()
     {
-        Console.WriteLine("круг - цвет: {0}, Visible: {1}", c, visible);
+        Console.WriteLine("круг - цвет: {0}, видимость: {1}", c, v);
     }
 }
