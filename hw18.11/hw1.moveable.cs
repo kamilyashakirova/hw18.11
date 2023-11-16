@@ -1,5 +1,5 @@
 ﻿interface movable
 {
-    void Hor(int d);
-    void Vert(int d);
+    void hor(int d);
+    void vert(int d);
 }
