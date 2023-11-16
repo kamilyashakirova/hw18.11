@@ -1,7 +1,7 @@
 ﻿using System;
 class Point : Figure, movable
 {
-    public Point(string c, bool visible) : base(c, visible)
+    public Point(string c, bool v) : base(c, v)
     {
     }
 
@@ -23,6 +23,6 @@ class Point : Figure, movable
 
     public override void status()
     {
-        Console.WriteLine("точка - её цвет: {0}, видимая: {1}", c, visible);
+        Console.WriteLine("точка - её цвет: {0}, видимая: {1}", c, v);
     }
 }
