@@ -21,20 +21,20 @@ class Program
         Point point = new Point("pink", true);
         Circle circle = new Circle("purple", true, 3);
         Rectangle rectangle = new Rectangle("gray", true, 30, 40);
-        point.Hor(22);
-        circle.Hor(23);
-        rectangle.Vert(42);
-        rectangle.Hor(21);
-        point.Vert(2);
+        point.hor(22);
+        circle.hor(23);
+        rectangle.vert(42);
+        rectangle.hor(21);
+        point.vert(2);
         point.change("red");
         circle.change("black");
         rectangle.change("blue");
         point.status();
         circle.status();
         rectangle.status();
-        double circleArea = circle.CalculateArea();
-        double rectangleArea = rectangle.CalculateArea();
-        Console.WriteLine("площадь окружности: " + circleArea);
-        Console.WriteLine("площадь прямоугольника: " + rectangleArea);
+        double carea = circle.area();
+        double rarea = rectangle.area();
+        Console.WriteLine("площадь окружности: " + carea);
+        Console.WriteLine("площадь прямоугольника: " + rarea);
     }
 }
