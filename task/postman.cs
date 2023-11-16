@@ -1,8 +1,8 @@
 ﻿using System;
 public class Postman : Game
 {
-    public override void Play(string teamName)
+    public override void Play(string tname)
     {
-        Console.WriteLine("Команда {0} играет в мышеловку", teamName);
+        Console.WriteLine("Команда {0} играет в почтальона", tname);
     }
 }
