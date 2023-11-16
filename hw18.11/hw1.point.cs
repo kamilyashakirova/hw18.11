@@ -5,12 +5,12 @@ class Point : Figure, movable
     {
     }
 
-    public void Hor(int d)
+    public void hor(int d)
     {
         Console.WriteLine("двигаем точку по горизонтали на расстояние: {0}", d);
     }
 
-    public void Vert(int d)
+    public void vert(int d)
     {
         Console.WriteLine("двигаем точку по вертикали на расстояние: {0}", d);
     }
